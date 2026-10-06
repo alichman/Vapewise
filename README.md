@@ -15,8 +15,16 @@ export const BLE_CONFIG = {
 API
 
 CMD:
+Byte 0
 0 - refresh device state - forces STATE to notify an update
-1 - Write lock - 0: unlock / 1: lock
+1 - Write lock
+  Byte 1 - 0: unlock / 1: lock
 (Writing lock causes an automatic notify)
-2 - Write debug - 0: No heat / 1: Heat
+2 - Write debug
+  Byte 1 - 0: No heat / 1: Heat
+
+STATE:
+Byte 0: Breathing state:
+  0 - idle | 1 - breathing | 2 - blinker
+Byte 1: Lock - 0 (unlocked) / 1 (locked)
 ```
