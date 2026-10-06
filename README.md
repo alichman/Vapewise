@@ -11,6 +11,7 @@ export const BLE_CONFIG = {
   STATE_CHARACTERISTIC_UUID: '0x181B',
 };
 ```
+```
 API
 
 CMD:
@@ -18,4 +19,4 @@ CMD:
 1 - Write lock - 0: unlock / 1: lock
 (Writing lock causes an automatic notify)
 2 - Write debug - 0: No heat / 1: Heat
-
+```
