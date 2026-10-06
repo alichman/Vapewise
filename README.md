@@ -3,13 +3,14 @@
 Below is an explanation of the BLE API.
 There are two characteristics to Vapewise, UUIDs listed below:
 
+```
 export const BLE_CONFIG = {
   DEVICE_NAME: 'Vapewise',
   SERVICE_UUID: 'c13386b7-07e7-4695-b20d-dc2ce7594d5a',
   CMD_CHARACTERISTIC_UUID: '0x181A',
   STATE_CHARACTERISTIC_UUID: '0x181B',
 };
-
+```
 API
 
 CMD:
